@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --color-beige: #F5F1E9;
+  --color-gold: #C5A059;
+  --color-dark: #1A1A1A;
+}
+
+@theme {
+  --color-safari-green: #1a2e1a;
+  --color-safari-green-light: #2d4a2d;
+  --color-safari-sand: var(--color-beige);
+  --color-safari-gold: var(--color-gold);
+  --color-safari-dark: #ffffff;
+  --color-safari-card: #f8f9fa;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white border border-slate-200 shadow-sm rounded-2xl;
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #1a2e1a 0%, #0a0c0a 100%);
+}
+
+.gold-text {
+  @apply bg-gradient-to-r from-safari-gold to-safari-sand bg-clip-text text-transparent;
+}
+

@@ -1,0 +1,8 @@
+
+{
+  "name": "YALA360 – Luxury Safari Planning",
+  "description": "A premium, crowd-aware safari booking and planning platform for Yala National Park, prioritizing sustainability and visitor experience.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
