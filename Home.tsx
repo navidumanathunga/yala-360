@@ -202,9 +202,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-white/10">
           {[
             { end: 1200, suffix: '+', label: 'Safaris Booked' },
-            { end: 98,   suffix: '%', label: 'Satisfaction Rate' },
-            { end: 50,   suffix: '+', label: 'Expert Guides' },
-            { end: 5,    suffix: '★', label: 'Average Rating' },
+            { end: 98, suffix: '%', label: 'Satisfaction Rate' },
+            { end: 50, suffix: '+', label: 'Expert Guides' },
+            { end: 5, suffix: '★', label: 'Average Rating' },
           ].map(({ end, suffix, label }, i) => (
             <Reveal key={i} delay={`${i * 100}ms`}>
               <div className="text-center py-8 px-4">
@@ -231,10 +231,10 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-gold/20">
           {[
-            { title: 'Plan Your Visit',    sub: 'Seamless smart booking',      img: 'planvisit',   link: '/booking',  Icon: Calendar  },
-            { title: 'Explore Wildlife',   sub: 'Real-time sightings map',      img: 'wildlife1',   link: '/map',      Icon: Compass   },
-            { title: 'Hotels Nearby',      sub: 'Curated luxury stays',         img: 'hotel1',      link: '/about',    Icon: MapPin    },
-            { title: 'View Gallery',       sub: 'Photos from our community',    img: 'gallery1',    link: '/gallery',  Icon: Camera    },
+            { title: 'Plan Your Visit', sub: 'Seamless smart booking', img: 'planvisit', link: '/booking', Icon: Calendar },
+            { title: 'Explore Wildlife', sub: 'Real-time sightings map', img: 'wildlife1', link: '/map', Icon: Compass },
+            { title: 'Hotels Nearby', sub: 'Curated luxury stays', img: 'hotel1', link: '/about', Icon: MapPin },
+            { title: 'View Gallery', sub: 'Photos from our community', img: 'gallery1', link: '/gallery', Icon: Camera },
           ].map(({ title, sub, link, Icon }, i) => (
             <Reveal key={i} delay={`${(i % 2) * 100}ms`}>
               <Link
@@ -245,9 +245,9 @@ export default function Home() {
                 <img
                   src={
                     i === 0 ? "https://images.unsplash.com/photo-1558791985-4241e4011215?auto=format&fit=crop&q=80&w=800&h=600" :
-                    i === 1 ? "https://images.unsplash.com/photo-1496841733162-a88a250a275c?auto=format&fit=crop&q=80&w=800&h=600" :
-                    i === 2 ? "https://images.unsplash.com/photo-1656314945854-3ed692d05500?auto=format&fit=crop&q=80&w=800&h=600" :
-                    "https://images.unsplash.com/photo-1569691105751-88df003de7a4?auto=format&fit=crop&q=80&w=800&h=600"
+                      i === 1 ? "https://images.unsplash.com/photo-1496841733162-a88a250a275c?auto=format&fit=crop&q=80&w=800&h=600" :
+                        i === 2 ? "https://images.unsplash.com/photo-1656314945854-3ed692d05500?auto=format&fit=crop&q=80&w=800&h=600" :
+                          "https://images.unsplash.com/photo-1569691105751-88df003de7a4?auto=format&fit=crop&q=80&w=800&h=600"
                   }
                   alt={title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -332,7 +332,7 @@ export default function Home() {
                   style={{ background: GOLD }}
                 >
                   <span className="text-xl font-bold">979</span>
-                  <span className="text-[9px] uppercase tracking-wider leading-tight">km²<br/>park</span>
+                  <span className="text-[9px] uppercase tracking-wider leading-tight">km²<br />park</span>
                 </div>
               </div>
             </Reveal>
@@ -385,8 +385,8 @@ export default function Home() {
                   <img
                     src={
                       i === 0 ? "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=700&h=400" :
-                      i === 1 ? "https://images.unsplash.com/photo-1705936981595-dea87508ce84?auto=format&fit=crop&q=80&w=700&h=400" :
-                      "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=700&h=400"
+                        i === 1 ? "https://images.unsplash.com/photo-1705936981595-dea87508ce84?auto=format&fit=crop&q=80&w=700&h=400" :
+                          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=700&h=400"
                     }
                     alt={title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

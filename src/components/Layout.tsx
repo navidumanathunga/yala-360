@@ -17,7 +17,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navigation */}
-      <nav 
+      <nav
         className="fixed top-0 left-0 w-full z-50 transition-all duration-500 px-6 lg:px-12 py-3 bg-beige shadow-md flex items-center justify-between text-black"
       >
         <Link to="/" className="flex items-center space-x-2">
@@ -29,9 +29,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center space-x-8 uppercase tracking-widest text-xs font-bold">
           {navLinks.map((link) => (
-            <Link 
-              key={link.path} 
-              to={link.path} 
+            <Link
+              key={link.path}
+              to={link.path}
               className={`hover:text-gold transition-colors ${location.pathname === link.path ? 'text-gold underline underline-offset-8' : ''}`}
             >
               {link.name}
@@ -41,12 +41,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             ADMIN
           </Link>
           {currentUser ? (
-             <button onClick={logout} className="ml-4 flex items-center space-x-1 px-5 py-2 text-black hover:text-gold transition-all">
-               <LogOut size={16} /> <span>Sign Out</span>
-             </button>
+            <button onClick={logout} className="ml-4 flex items-center space-x-1 px-5 py-2 text-black hover:text-gold transition-all">
+              <LogOut size={16} /> <span>Sign Out</span>
+            </button>
           ) : (
             <Link to="/login" className="ml-4 flex items-center space-x-1 px-5 py-2 bg-black text-white hover:bg-gold transition-all">
-               <User size={16} /> <span>Sign In</span>
+              <User size={16} /> <span>Sign In</span>
             </Link>
           )}
         </div>
@@ -70,13 +70,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           ))}
           <Link to="/admin" onClick={() => setIsMenuOpen(false)} className="text-gold">Admin Portal</Link>
           {currentUser ? (
-             <button onClick={() => { logout(); setIsMenuOpen(false); }} className="mt-4 flex items-center space-x-2 text-black">
-               <LogOut size={24} /> <span>Sign Out</span>
-             </button>
+            <button onClick={() => { logout(); setIsMenuOpen(false); }} className="mt-4 flex items-center space-x-2 text-black">
+              <LogOut size={24} /> <span>Sign Out</span>
+            </button>
           ) : (
-             <Link to="/login" onClick={() => setIsMenuOpen(false)} className="mt-4 flex items-center space-x-2 text-black border-2 border-black px-6 py-2">
-               <User size={24} /> <span>Sign In</span>
-             </Link>
+            <Link to="/login" onClick={() => setIsMenuOpen(false)} className="mt-4 flex items-center space-x-2 text-black border-2 border-black px-6 py-2">
+              <User size={24} /> <span>Sign In</span>
+            </Link>
           )}
         </div>
       )}
@@ -92,7 +92,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <div className="md:col-span-2">
             <h2 className="text-3xl serif mb-6 tracking-widest">YALA360</h2>
             <p className="text-gray-400 max-w-md leading-loose font-light">
-              Elevating the Sri Lankan safari experience through technology and luxury. 
+              Elevating the Sri Lankan safari experience through technology and luxury.
               Our mission is to reduce overcrowding while preserving the majesty of Yala's wildlife.
             </p>
           </div>
@@ -106,14 +106,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             </ul>
           </div>
           <div>
-            <h4 className="text-gold font-bold uppercase tracking-widest mb-6 text-sm">Connect</h4>
+            <h4 className="text-gold font-bold uppercase tracking-widest mb-6 text-sm">Contact</h4>
             <div className="flex space-x-6 mb-8">
-              <Instagram className="hover:text-gold cursor-pointer" size={20} />
-              <Facebook className="hover:text-gold cursor-pointer" size={20} />
-              <Twitter className="hover:text-gold cursor-pointer" size={20} />
+              <Instagram className="hover:text-gold cursor-pointer" size={25} />
+              <Facebook className="hover:text-gold cursor-pointer" size={25} />
+              <Twitter className="hover:text-gold cursor-pointer" size={25} />
             </div>
             <p className="text-xs text-gray-500">info@yala360.com</p>
-            <p className="text-xs text-gray-500">+94 (0) 77 123 4567</p>
+            <p className="text-xs text-gray-500">+94 (0) 77 222 4554</p>
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-gray-500">
